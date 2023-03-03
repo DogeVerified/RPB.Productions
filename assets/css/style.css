@@ -1,0 +1,301 @@
+/* RPB.Productions Photography Portfolio */
+
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+/* Normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+footer,header,nav{display:block}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+b{font-weight:bolder}img{border-style:none}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input{font:inherit;margin:0}
+button,input{overflow:visible}button{text-transform:none}
+button,[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+/* Normalize Ende */
+
+/* Main CSS */
+html,body{
+    font-family: 'Source Code Pro', monospace;
+    font-size:15px;line-height:1.5
+}
+
+html{
+    overflow-x:hidden
+}
+
+h1{
+    font-size:36px
+}
+h2{
+    font-size:30px
+}
+h3{
+    font-size:24px
+}
+h1,h2,h3{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight:400;
+    margin:10px 0
+}
+
+.wide{
+    letter-spacing:4px
+}
+
+hr{
+    border:0;
+    border-top:1px solid #eee;
+    margin:20px 0
+}
+
+.image{
+    max-width:100%;
+    height:auto
+}
+
+img{
+    vertical-align:middle
+}
+
+a{
+    color:inherit
+}
+
+.button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+.button2{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+
+/*
+TEST
+
+.button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}   */
+
+
+.button:disabled{
+    cursor:not-allowed;opacity:0.3}:disabled *{pointer-events:none
+    }
+
+.input{
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
+
+
+.sidebar{
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
+}
+
+.main{
+    transition:margin-left .4s
+}
+
+.bar-block .bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0
+}
+
+.bar-block.center .bar-item{
+    text-align:center
+}
+
+.container:after,.container:before,.row:after,.row:before,.row-padding:after,.row-padding:before{
+    content:"";display:table;clear:both
+}
+
+.half,.third{
+    float:left;
+    width:100%
+}
+
+@media (min-width:601px){.third{width:33.33333%}.half{width:49.99999%}}
+
+.content{
+    margin-left:auto;
+    margin-right:auto
+}
+
+.content{
+    max-width:980px
+}
+
+@media (max-width:600px){.hide-small{display:none!important}}
+
+@media (min-width:993px){.hide-large{display:none!important}}
+
+@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
+
+@media (max-width:992px){.main{margin-left:0!important;margin-right:0!important}}
+
+.top{
+    position:fixed;
+    width:100%;
+    z-index:1
+}
+
+.top{
+    top:0
+}
+
+.display-topright{
+    position:absolute;
+    right:0;
+    top:0
+}
+
+.circle{
+    border-radius:50%
+}
+
+.round{
+    border-radius:4px
+}
+
+.row-padding img{
+    margin-bottom: 12px;;
+}
+
+.row-padding,.row-padding>.half{
+    padding:0 8px
+}
+
+.container{
+    padding:0.01em 16px
+}
+
+.animate-right{
+    position:relative;
+    animation:animateright 0.4s
+}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.opacity,.hover-opacity:hover{
+    opacity:0.60
+}
+
+.greyscale{filter:grayscale(75%)}
+.medium{font-size:15px!important}
+.large{font-size:18px!important}
+.xlarge{font-size:24px!important}
+.xxlarge{font-size:36px!important}
+.xxxlarge{font-size:48px!important}
+.jumbo{font-size:50px!important}
+.justify{text-align:justify!important}
+.center{text-align:center!important}
+.border{border:1px solid #ccc!important}
+.section{margin-top:16px!important;margin-bottom:16px!important}
+.margin-top{margin-top:16px!important}
+.margin-right{margin-right:16px!important}
+.padding-small{padding:4px 8px!important}
+.padding-large{padding:12px 24px!important}
+.padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.left{float:left!important}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.button2:hover{color:#000!important;}
+/* Main CSS Ende */
+
+/* Farben */
+.white{
+    color:#000!important;
+    background-color:#fff!important
+}
+.black,.hover-black:hover{
+    color:#fff!important;
+    background-color:#000!important
+}
+.light-grey{
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
+.dark-grey{
+    color:#fff!important;
+    background-color:#616161!important
+}
+.hover-text-purple:hover{
+    color:#645CBB!important
+}
+.text-black,.hover-text-black:hover{
+    color:#000!important
+}
+.text-grey{
+    color:#757575!important
+}
+.light-blue{
+    color:#000!important;
+    background-color:#93C6E7!important
+}
+.light-blue:hover{
+    color:#000!important;
+    background-color:#B9F3FC!important
+}
+.bright-purple{
+    color:#000!important;
+    background-color:#BFACE2!important
+}
+.pinkish{
+    color:#000!important;
+    background-color:#EBC7E6!important
+}
+.bright-purple-icon{
+    color:#BFACE2!important;
+}
+.light-blue-sidebar{
+    color:#93C6E7!important;
+}
+.light-blue-sidebar:hover{
+    color:#B9F3FC!important;
+    background-color: transparent!important;
+}
+
+/* Farben Ende */
